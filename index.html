@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Миу-Миу" - Меню заказов</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/ico.ico">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Кофейня "Миу-Миу"</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#coffee" class="nav-link active">Кофе</a></li>
+                    <li><a href="#tea" class="nav-link">Чай</a></li>
+                    <li><a href="#desserts" class="nav-link">Десерты</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Поиск по меню...">
+                <button id="search-btn">Найти</button>
+            </div>
+        </div>
+    </header>
+
+<main class="main-content">
+<section class="limited-offers" class="menu-section active">
+    <div class="container">
+        <h2>Лимитированные предложения этой недели</h2>
+        <div class="offers-grid">
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/rafshepot.jpg" alt="Осенний латте">
+                </div>
+                <h3>Раф «Шепот мальчишки»</h3>
+                <p>Нежный ванильный кофе с тёплым бисквитом.</p>
+                <span class="price">1050 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/matchasakura.jpg" alt="Капучино с фундуком">
+                </div>
+                <h3>Матча «Сакура и белый шоколад»</h3>
+                <p>Цветочная нежность и сладость белого шоколада.</p>
+                <span class="price">1100 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/capuchinomedov.jpg" alt="Моккачино с апельсином">
+                </div>
+                <h3>Капучино «Медово-имбирный пряник»</h3>
+                <p>Уютная пряность в бархатной молочной пене.</p>
+                <span class="price">1000 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/americanodim.jpg" alt="Раф с розой">
+                </div>
+                <h3>Американо «дымный цитрус»</h3>
+                <p>Дымный кофе с яркой цитрусовой нотой.</p>
+                <span class="price">1150 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/lattemalina.jpg" alt="Карамельный макиато">
+                </div>
+                <h3>Латте «Фисташка-малина»</h3>
+                <p>Сливочная фисташка и кисло-сладкая малина.</p>
+                <span class="price">1250 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+            <div class="offer-item">
+                <div class="offer-image">
+                    <img src="./images/ecspressoapple.jpg" alt="Эспрессо тоник">
+                </div>
+                <h3>Эспрессо «Тоник с яблоком»</h3>
+                <p>Бодрая игристость с лёгкой кислинкой яблока.</p>
+                <span class="price">1050 ₽</span>
+                <button class="add-to-cart">Добавить</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+    <!-- Основное меню -->
+    <main class="main-content" id="mainContent">
+        <div class="container">
+            <!-- Кофе -->
+            <section id="coffee" class="menu-section active">
+                <h2>Кофе</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="./images/rаafshepot.jpg" alt="Эспрессо">
+                        </div>
+                        <h3>Раф</h3>
+                        <p>Классический крепкий кофе</p>
+                        <span class="price">300 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="./images/capuch4inomedov.jpg" alt="Американо">
+                        </div>
+                        <h3>Матча</h3>
+                        <p>Эспрессо с горячей водой</p>
+                        <span class="price">450 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/cappucc4ino.jpg" alt="Капучино">
+                        </div>
+                        <h3>Капучино</h3>
+                        <p>Эспрессо с молочной пенкой</p>
+                        <span class="price">350 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/latte.jpg" alt="Латте">
+                        </div>
+                        <h3>Американо</h3>
+                        <p>Кофе с большим количеством молока</p>
+                        <span class="price">300 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/flat-white.jpg" alt="Флэт уайт">
+                        </div>
+                        <h3>Латте</h3>
+                        <p>Двойной эспрессо с нежной молочной пенкой</p>
+                        <span class="price">250 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/mocha.jpg" alt="Мокка">
+                        </div>
+                        <h3>Эспрессо</h3>
+                        <p>Кофе с шоколадом и молоком</p>
+                        <span class="price">350 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Чай -->
+            <section id="tea" class="menu-section">
+                <h2>Чай</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/black-tea.jpg" alt="Черный чай">
+                        </div>
+                        <h3>Черный чай</h3>
+                        <p>Классический черный чай</p>
+                        <span class="price">180 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/green-tea.jpg" alt="Зеленый чай">
+                        </div>
+                        <h3>Зеленый чай</h3>
+                        <p>Свежий зеленый чай</p>
+                        <span class="price">180 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/fruit-tea.jpg" alt="Фруктовый чай">
+                        </div>
+                        <h3>Фруктовый чай</h3>
+                        <p>Чай с фруктовыми нотками</p>
+                        <span class="price">220 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Десерты -->
+            <section id="desserts" class="menu-section">
+                <h2>Десерты</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/tiramisu.jpg" alt="Тирамису">
+                        </div>
+                        <h3>Эклер</h3>
+                        <p>Классический итальянский десерт</p>
+                        <span class="price">350 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/cheesecake.jpg" alt="Чизкейк">
+                        </div>
+                        <h3>Круасан</h3>
+                        <p>Нежный сырный десерт</p>
+                        <span class="price">320 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/macarons.jpg" alt="Макарон">
+                        </div>
+                        <h3>Чизкейк</h3>
+                        <p>Французское пирожное</p>
+                        <span class="price">180 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/tiramisu.jpg" alt="Тирамису">
+                        </div>
+                        <h3>Пончики</h3>
+                        <p>Классический итальянский десерт</p>
+                        <span class="price">350 ₽</span>
+                        <button class="add-to-cart">Добавить</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Корзина -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Ваш заказ</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-total">
+            <p>Итого: <span id="total-price">0</span> ₽</p>
+            <button class="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Кнопка корзины -->
+    <button class="cart-toggle">
+        🛒 <span class="cart-count">0</span>
+    </button>
+
+    <!-- Модальное окно благодарности -->
+    <div class="thank-you-modal">
+        <div class="thank-you-content">
+            <h2>Спасибо за заказ!</h2>
+            <p>Ваш заказ принят в обработку. Ожидайте приготовления.</p>
+            <button class="close-thank-you">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
