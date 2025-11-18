@@ -1,4 +1,4 @@
-// Кофейня "Аромат" - основной скрипт
+// Кофейня "Миу-Миу"" - основной скрипт
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Кофейня "Миу-Миу" - инициализация...');
     
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     safeInitSearch();
     safeInitCart();
     
-    console.log('Кофейня "Аромат" - все модули инициализированы!');
+    console.log('Кофейня "Миу-Миу"" - все модули инициализированы!');
 });
 
 // Безопасная инициализация навигации
@@ -510,4 +510,5 @@ function safeQuerySelectorAll(selector) {
         return [];
     }
 }
+
 
