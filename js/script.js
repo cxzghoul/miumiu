@@ -1,6 +1,6 @@
 // Кофейня "Аромат" - основной скрипт
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Кофейня "Аромат" - инициализация...');
+    console.log('Кофейня "Миу-Миу" - инициализация...');
     
     // Инициализация всех модулей с безопасными проверками
     safeInitNavigation();
@@ -510,3 +510,4 @@ function safeQuerySelectorAll(selector) {
         return [];
     }
 }
+
